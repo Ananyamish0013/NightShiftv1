@@ -1,0 +1,13 @@
+{
+  "redirect_uris": [
+    "http://localhost:12849/oauth/callback"
+  ],
+  "token_endpoint_auth_method": "none",
+  "grant_types": [
+    "authorization_code"
+  ],
+  "client_name": "[Unverified Dynamic Application] MCP CLI Proxy",
+  "scope": "mcp",
+  "client_id": "a6f8a153e6f8049c6fa162aac837375576e2e66c5352e30ee37db193166e763a",
+  "client_id_issued_at": 1780986389
+}

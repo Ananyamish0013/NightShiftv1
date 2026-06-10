@@ -1,0 +1,7 @@
+{
+  "access_token": "7911a01ecc43e8ae32401142b388d12fd732bc3483412e2f7a94946deb45fc0e",
+  "token_type": "Bearer",
+  "expires_in": 7200,
+  "scope": "mcp",
+  "refresh_token": "b1e9d988f97e7a200bc06d3513df4b398305358e47c5abb0a702cdd7ee281ad9"
+}

@@ -1,0 +1,122 @@
+[2026-06-07T08:28:25.525Z][28392] Starting mcp-remote with server URL: https://gitlab.com/api/v4/mcp 
+[2026-06-07T08:28:25.548Z][28392] Using automatically selected callback port: 12849 
+[2026-06-07T08:28:25.559Z][28392] Discovering OAuth server configuration... 
+[2026-06-07T08:28:25.567Z][28392] Starting OAuth server discovery {"serverUrl":"https://gitlab.com/api/v4/mcp"}
+[2026-06-07T08:28:25.580Z][28392] Probing MCP server for WWW-Authenticate header 
+[2026-06-07T08:28:26.112Z][28392] Received 401 with WWW-Authenticate header {"hasHeader":false}
+[2026-06-07T08:28:26.144Z][28392] Starting Protected Resource Metadata discovery {"resourceUrl":"https://gitlab.com/api/v4/mcp","hasWWWAuthenticateHeader":false}
+[2026-06-07T08:28:26.154Z][28392] Built Protected Resource Metadata URLs {"resourceUrl":"https://gitlab.com/api/v4/mcp","urls":["https://gitlab.com/.well-known/oauth-protected-resource/api/v4/mcp","https://gitlab.com/.well-known/oauth-protected-resource"]}
+[2026-06-07T08:28:26.162Z][28392] Fetching Protected Resource Metadata {"metadataUrl":"https://gitlab.com/.well-known/oauth-protected-resource/api/v4/mcp"}
+[2026-06-07T08:28:26.243Z][28392] Successfully fetched Protected Resource Metadata {"resource":["https://gitlab.com/api/v4/mcp"],"authorizationServers":["https://gitlab.com"],"scopesSupported":["mcp"]}
+[2026-06-07T08:28:26.252Z][28392] Using authorization server from Protected Resource Metadata {"authorizationServerUrl":"https://gitlab.com"}
+[2026-06-07T08:28:26.260Z][28392] Fetching authorization server metadata {"serverUrl":"https://gitlab.com","metadataUrl":"https://gitlab.com/.well-known/oauth-authorization-server"}
+[2026-06-07T08:28:26.294Z][28392] Successfully fetched authorization server metadata {"issuer":"https://gitlab.com","scopes_supported":["api","read_api","read_user","create_runner","manage_runner","k8s_proxy","self_rotate","mcp","mcp_orbit","read_repository","write_repository","read_registry","write_registry","read_virtual_registry","write_virtual_registry","read_observability","write_observability","ai_features","sudo","admin_mode","read_service_ping","openid","profile","email","ai_workflows","user:*"],"scopeCount":26}
+[2026-06-07T08:28:26.304Z][28392] Discovered authorization server: https://gitlab.com 
+[2026-06-07T08:28:26.310Z][28392] Protected Resource Metadata scopes {"scopes_supported":["mcp"]}
+[2026-06-07T08:28:26.318Z][28392] [28392] Connecting to remote server: https://gitlab.com/api/v4/mcp 
+[2026-06-07T08:28:26.325Z][28392] Using transport strategy: http-first 
+[2026-06-07T08:28:26.332Z][28392] Attempting to connect to remote server {"sseTransport":false}
+[2026-06-07T08:28:26.342Z][28392] Starting transport directly 
+[2026-06-07T08:28:26.348Z][28392] Creating test transport for HTTP-only connection test 
+[2026-06-07T08:28:26.373Z][28392] Reading OAuth tokens 
+[2026-06-07T08:28:26.382Z][28392] Token request stack trace: Error
+    at NodeOAuthClientProvider.tokens (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:21070:44)
+    at StreamableHTTPClientTransport._commonHeaders (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19644:47)
+    at StreamableHTTPClientTransport.send (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19835:34)
+    at file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17050:25
+    at new Promise (<anonymous>)
+    at Client.request (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:16940:12)
+    at Client.connect (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17853:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async connectToRemoteServer (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:20521:9)
+    at async runProxy (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/proxy.js:154:29)
+[2026-06-07T08:28:26.394Z][28392] Token result: Not found 
+[2026-06-07T08:28:26.747Z][28392] Reading client info 
+[2026-06-07T08:28:26.759Z][28392] Client info result: Not found
+[2026-06-07T08:28:26.769Z][28392] Using scope from staticOAuthClientMetadata {"scope":"mcp"}
+[2026-06-07T08:28:27.242Z][28392] Saving client info {"client_id":"2c5092290cbb73cb9a6536e6c2465ea02b66f89ce9a11ac908ee660b621608da"}
+[2026-06-07T08:28:27.287Z][28392] Reading OAuth tokens 
+[2026-06-07T08:28:27.296Z][28392] Token request stack trace: Error
+    at NodeOAuthClientProvider.tokens (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:21070:44)
+    at authInternal (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:18605:33)
+    at async auth (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:18536:12)
+    at async StreamableHTTPClientTransport.send (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19859:26)
+[2026-06-07T08:28:27.307Z][28392] Token result: Not found 
+[2026-06-07T08:28:27.314Z][28392] Using scope from staticOAuthClientMetadata {"scope":"mcp"}
+[2026-06-07T08:28:27.330Z][28392] Saving code verifier 
+[2026-06-07T08:28:27.349Z][28392] authorizationServerMetadata: {"issuer":"https://gitlab.com","authorization_endpoint":"https://gitlab.com/oauth/authorize","token_endpoint":"https://gitlab.com/oauth/token","revocation_endpoint":"https://gitlab.com/oauth/revoke","introspection_endpoint":"https://gitlab.com/oauth/introspect","userinfo_endpoint":"https://gitlab.com/oauth/userinfo","jwks_uri":"https://gitlab.com/oauth/discovery/keys","scopes_supported":["api","read_api","read_user","create_runner","manage_runner","k8s_proxy","self_rotate","mcp","mcp_orbit","read_repository","write_repository","read_registry","write_registry","read_virtual_registry","write_virtual_registry","read_observability","write_observability","ai_features","sudo","admin_mode","read_service_ping","openid","profile","email","ai_workflows","user:*"],"response_types_supported":["code"],"response_modes_supported":["query","fragment","form_post"],"grant_types_supported":["authorization_code","client_credentials","device_code","refresh_token"],"token_endpoint_auth_methods_supported":["client_secret_basic","client_secret_post"],"subject_types_supported":["public"],"id_token_signing_alg_values_supported":["RS256"],"claim_types_supported":["normal"],"claims_supported":["iss","sub","aud","exp","iat","sub_legacy","name","nickname","preferred_username","given_name","family_name","email","email_verified","website","profile","picture","groups","groups_direct","https://gitlab.org/claims/groups/owner","https://gitlab.org/claims/groups/maintainer","https://gitlab.org/claims/groups/developer","project_path","ci_config_ref_uri","ref_path","sha","environment","jti"],"code_challenge_methods_supported":["plain","S256"],"registration_endpoint":"https://gitlab.com/oauth/register"} 
+[2026-06-07T08:28:27.360Z][28392] Using scope from staticOAuthClientMetadata {"scope":"mcp"}
+[2026-06-07T08:28:27.369Z][28392] Added scope parameter to authorization URL {"scopes":"mcp"}
+[2026-06-07T08:28:27.378Z][28392] 
+Please authorize this client by visiting:
+https://gitlab.com/oauth/authorize?response_type=code&client_id=2c5092290cbb73cb9a6536e6c2465ea02b66f89ce9a11ac908ee660b621608da&code_challenge=rB_u4Keh5TePuEX6VqFUxbu1WIazt-nYpCQWwaMtQKI&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A12849%2Foauth%2Fcallback&state=01671844-224f-48c2-a5d6-bbfbca120f3f&scope=mcp
+ 
+[2026-06-07T08:28:27.386Z][28392] Redirecting to authorization URL https://gitlab.com/oauth/authorize?response_type=code&client_id=2c5092290cbb73cb9a6536e6c2465ea02b66f89ce9a11ac908ee660b621608da&code_challenge=rB_u4Keh5TePuEX6VqFUxbu1WIazt-nYpCQWwaMtQKI&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A12849%2Foauth%2Fcallback&state=01671844-224f-48c2-a5d6-bbfbca120f3f&scope=mcp
+[2026-06-07T08:28:27.970Z][28392] Browser opened automatically. 
+[2026-06-07T08:28:27.983Z][28392] Authentication required. Initializing auth... 
+[2026-06-07T08:28:27.996Z][28392] Authentication error detected {"errorMessage":"Unauthorized","stack":"Error: Unauthorized\n    at StreamableHTTPClientTransport.send (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19866:19)"}
+[2026-06-07T08:28:28.010Z][28392] Calling authInitializer to start auth flow 
+[2026-06-07T08:28:28.022Z][28392] Initializing auth coordination on-demand 
+[2026-06-07T08:28:28.031Z][28392] Initializing auth coordination on-demand {"serverUrlHash":"252ab552f8636c5b82dfd2622f4486b1","callbackPort":12849}
+[2026-06-07T08:28:28.041Z][28392] Coordinating authentication {"serverUrlHash":"252ab552f8636c5b82dfd2622f4486b1","callbackPort":12849}
+[2026-06-07T08:28:28.051Z][28392] Skipping lockfile check on Windows 
+[2026-06-07T08:28:28.061Z][28392] Setting up OAuth callback server {"port":12849}
+[2026-06-07T08:28:28.073Z][28392] OAuth callback server running at http://127.0.0.1:12849 
+[2026-06-07T08:28:28.081Z][28392] OAuth callback server running {"port":12849}
+[2026-06-07T08:28:28.091Z][28392] Creating lockfile for server 252ab552f8636c5b82dfd2622f4486b1 with process 28392 on port 12849 
+[2026-06-07T08:28:28.113Z][28392] Auth coordination complete, returning primary instance handlers 
+[2026-06-07T08:28:28.125Z][28392] Auth coordination completed {"skipBrowserAuth":false}
+[2026-06-07T08:28:28.135Z][28392] Authentication required. Waiting for authorization... 
+[2026-06-07T08:28:28.143Z][28392] Waiting for auth code from callback server 
+[2026-06-07T08:28:33.399Z][28392] Auth code received, resolving promise 
+[2026-06-07T08:28:33.443Z][28392] Received auth code from callback server 
+[2026-06-07T08:28:33.455Z][28392] Completing authorization... 
+[2026-06-07T08:28:33.591Z][28392] Reading client info 
+[2026-06-07T08:28:33.607Z][28392] Client info result: Found
+[2026-06-07T08:28:33.618Z][28392] Using scope from staticOAuthClientMetadata {"scope":"mcp"}
+[2026-06-07T08:28:33.628Z][28392] Reading code verifier 
+[2026-06-07T08:28:33.642Z][28392] Code verifier found: true
+[2026-06-07T08:28:33.653Z][28392] Reading client info 
+[2026-06-07T08:28:33.667Z][28392] Client info result: Found
+[2026-06-07T08:28:34.097Z][28392] Saving tokens {"hasAccessToken":true,"hasRefreshToken":true,"expiresIn":"7200 seconds","expiresInValue":7200}
+[2026-06-07T08:28:34.116Z][28392] Authorization completed successfully 
+[2026-06-07T08:28:34.126Z][28392] Recursively reconnecting for reason: authentication-needed 
+[2026-06-07T08:28:34.136Z][28392] Recursively reconnecting after auth {"recursionReasons":["authentication-needed"]}
+[2026-06-07T08:28:34.146Z][28392] [28392] Connecting to remote server: https://gitlab.com/api/v4/mcp 
+[2026-06-07T08:28:34.157Z][28392] Using transport strategy: http-first 
+[2026-06-07T08:28:34.167Z][28392] Attempting to connect to remote server {"sseTransport":false}
+[2026-06-07T08:28:34.177Z][28392] Starting transport directly 
+[2026-06-07T08:28:34.187Z][28392] Creating test transport for HTTP-only connection test 
+[2026-06-07T08:28:34.197Z][28392] Reading OAuth tokens 
+[2026-06-07T08:28:34.208Z][28392] Token request stack trace: Error
+    at NodeOAuthClientProvider.tokens (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:21070:44)
+    at StreamableHTTPClientTransport._commonHeaders (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19644:47)
+    at StreamableHTTPClientTransport.send (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19835:34)
+    at file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17050:25
+    at new Promise (<anonymous>)
+    at Client.request (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:16940:12)
+    at Client.connect (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17853:33)
+    at async connectToRemoteServer (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:20521:9)
+    at async runProxy (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/proxy.js:154:29)
+[2026-06-07T08:28:34.219Z][28392] Token result: {"found":true,"hasAccessToken":true,"hasRefreshToken":true,"expiresIn":"7200 seconds","isExpired":false,"expiresInValue":7200}
+[2026-06-07T08:28:34.604Z][28392] Reading OAuth tokens 
+[2026-06-07T08:28:34.617Z][28392] Token request stack trace: Error
+    at NodeOAuthClientProvider.tokens (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:21070:44)
+    at StreamableHTTPClientTransport._commonHeaders (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19644:47)
+    at StreamableHTTPClientTransport.send (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:19835:34)
+    at Client.notification (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17165:27)
+    at Client.connect (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:17873:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async connectToRemoteServer (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/chunk-65X3S4HB.js:20521:9)
+    at async runProxy (file:///C:/Users/anany/AppData/Local/npm-cache/_npx/1a3c4333f3a90708/node_modules/mcp-remote/dist/proxy.js:154:29)
+[2026-06-07T08:28:34.633Z][28392] Token result: {"found":true,"hasAccessToken":true,"hasRefreshToken":true,"expiresIn":"7200 seconds","isExpired":false,"expiresInValue":7200}
+[2026-06-07T08:28:35.006Z][28392] Connected to remote server using StreamableHTTPClientTransport 
+[2026-06-07T08:28:35.019Z][28392] Local STDIO server running 
+[2026-06-07T08:28:35.030Z][28392] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport 
+[2026-06-07T08:28:35.040Z][28392] Press Ctrl+C to exit 
+[2026-06-07T08:30:33.575Z][28392] Received SIGINT signal, cleaning up 
+[2026-06-07T08:30:33.591Z][28392] Cleaning up lockfile for server 252ab552f8636c5b82dfd2622f4486b1 
+[2026-06-07T08:30:33.601Z][28392] 
+Shutting down... 
+[2026-06-07T08:30:33.613Z][28392] Remote transport closed, closing local transport 
+[2026-06-07T08:30:33.627Z][28392] Error removing lockfile on exit: {"errno":-4058,"code":"ENOENT","syscall":"unlink","path":"C:\\Users\\anany\\.mcp-auth\\mcp-remote-0.1.37\\252ab552f8636c5b82dfd2622f4486b1_lock.json"}
