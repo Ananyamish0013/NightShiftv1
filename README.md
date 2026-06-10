@@ -87,7 +87,7 @@ Secret token: your GITLAB_WEBHOOK_SECRET
 
 
 Status
-Currently in active development as a hackathon submission. Core pipeline (webhook → agent → MR) is functional. MCP authentication in stateless Cloud Run containers is the active area of work.
+Currently in active development. Core pipeline (webhook → agent → MR) is functional. MCP authentication in stateless Cloud Run containers is the active area of work.
 
 Built With
 
